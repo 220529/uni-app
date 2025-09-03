@@ -1,0 +1,26 @@
+$primary-color: #42b983;
+$font-jdzhenghei: 'JDZhengHei-01-Regular';
+
+// 注册字体
+@font-face {
+  font-family: $font-jdzhenghei;
+  src: url('@/static/fonts/JDZhengHei-01-Regular.ttf') format('truetype');
+  /* 路径根据实际调整 */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ellipsis {
+  white-space: nowrap; /* 禁止换行 */
+  overflow: hidden; /* 隐藏超出部分 */
+  text-overflow: ellipsis; /* 超出时显示省略号 */
+}
+
+.text-ellipsis-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 限制显示两行 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all; /* 避免长单词或数字撑开 */
+}

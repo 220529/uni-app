@@ -1,0 +1,67 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
+      "^cpm-(.*)": "@/components/cpm-$1/index.vue",
+      "^home-(.*)": "@/components/home/$1/index.vue"
+    }
+  },
+  "pages": [
+    { "path": "pages/index/index", "style": { "navigationBarTitleText": "首页", "navigationBarBackgroundColor": "#667eea" } },
+    { "path": "pages/home/index", "style": { "navigationStyle": "custom" } },
+    { "path": "pages/mine/index", "style": { "navigationBarTitleText": "我的", "navigationBarBackgroundColor": "#FFE9C3" } },
+    { "path": "pages/login/index", "style": { "navigationBarTitleText": "登录", "navigationBarBackgroundColor": "#3190CA" } },
+    { "path": "pages/work-persons/index", "style": { "navigationBarTitleText": "服务团队", "navigationBarBackgroundColor": "#667eea" } }
+  ],
+  "subPackages": [
+    {
+      "root": "pages/tools",
+      "independent": true,
+      "pages": [
+        { "path": "demo/index", "style": { "navigationBarTitleText": "demo" } },
+        { "path": "component-test/index", "style": { "navigationBarTitleText": "组件测试", "navigationBarBackgroundColor": "#667eea" } }
+      ]
+    },
+    {
+      "root": "pages/legal",
+      "pages": [
+        { "path": "privacy/index", "style": { "navigationBarTitleText": "隐私政策" } },
+        { "path": "user-agreement/index", "style": { "navigationBarTitleText": "用户协议" } }
+      ]
+    }
+  ],
+  "tabBar": {
+    "custom": true,
+    "color": "#666666",
+    "selectedColor": "#1677FF",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/House.png",
+        "selectedIconPath": "static/tabbar/House1.png"
+      },
+      {
+        "pagePath": "pages/home/index",
+        "text": "新家",
+        "iconPath": "static/tabbar/Megaphone.png",
+        "selectedIconPath": "static/tabbar/Megaphone1.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "static/tabbar/account.png",
+        "selectedIconPath": "static/tabbar/account1.png"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "CPM微信小程序",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
+}
