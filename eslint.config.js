@@ -40,7 +40,7 @@ export default [
       'space-before-function-paren': 'off',
       'object-curly-spacing': ['error', 'always'],
       'array-bracket-spacing': ['error', 'never'],
-      'max-len': ['warn', { 'code': 200 }],
+      'max-len': ['warn', { 'code': 120 }],
     }
   }
 ]
